@@ -1,8 +1,8 @@
 <?php
-$db_host="localhost"; //localhost server 
-$db_user="root";	//database username
-$db_password="";	//database password   
-$db_name="php_multilogin";	//database name
+$db_host="NjvzGhmtO0ZofkpbhxDU"; //localhost server 
+$db_user="uun4px2mbuhzl48d";	//database username
+$db_password="NjvzGhmtO0ZofkpbhxDU";	//database password   
+$db_name="bzqzhoqbxlmptdjilu8c";	//database name
 
 try
 {

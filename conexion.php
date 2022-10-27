@@ -1,11 +1,11 @@
 <?php 
-$contrasena = "c1BJQEZor84xbtKcyXZS";
-$usuario = "u96tjwuzms1vaze0";
-$nombre_bd = "bv9rawwwx8j4ytmlgh58";
+$contrasena = "NjvzGhmtO0ZofkpbhxDU";
+$usuario = "uun4px2mbuhzl48d";
+$nombre_bd = "bzqzhoqbxlmptdjilu8c";
 
 try {
 	$bd = new PDO (
-		'mysql:host=bv9rawwwx8j4ytmlgh58-mysql.services.clever-cloud.com;
+		'mysql:host=bzqzhoqbxlmptdjilu8c-mysql.services.clever-cloud.com;
 		dbname='.$nombre_bd,
 		$usuario,
 		$contrasena,
