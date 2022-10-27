@@ -31,9 +31,17 @@
         font-size: 15px;
         font-weight: bold;
     }
+	.fondo { 
+        background-image: url("imagenes/01.png");
+        background-size: -800px;
+        background-repeat: no-repeat;   
+        background-position: left bottom;   
+        background-color: #FAF7F0;     
+        
+    }
 </style>
 </head>
-	<body>
+	<body class="fondo">
 <?php
 require_once 'DBconect.php';
 session_start();
