@@ -9,10 +9,9 @@
     include_once '../conexion.php';
     $codigo = $_GET['codigo'];
 
-    $sentencia = $bd->prepare("select * from persona where codigo = ?;");
-    $sentencia->execute([$codigo]);
-    $persona = $sentencia->fetch(PDO::FETCH_OBJ);
-    //print_r($persona);
+    $sentencia = $bd -> query("select * from persona where codigo = $codigo");
+    $persona = $sentencia->fetchAll(PDO::FETCH_OBJ);
+    print_r($persona);
 ?>
 
 
@@ -30,17 +29,17 @@
                     <div class="mb-3">
                         <label class="form-label">Usuario: </label>
                         <input type="text" class="form-control" name="usuario" required 
-                        value="<?php echo $persona->usuario; ?>">
+                        value="<?php echo $persona[0]->usuario; ?>">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Correo: </label>
                         <input type="email" class="form-control" name="correo" autofocus required
-                        value="<?php echo $persona->correo; ?>">
+                        value="<?php echo $persona[0]->correo; ?>">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Contraseña: </label>
                         <input type="password" class="form-control" name="contraseña" autofocus required
-                        value="<?php echo $persona->contraseña; ?>">
+                        value="<?php echo $persona[0]->contraseña; ?>">
                         
                         
                     </div>
@@ -58,7 +57,7 @@
                 <br>
                    
                     <div class="d-grid">
-                        <input type="hidden" name="codigo" value="<?php echo $persona->codigo; ?>">
+                        <input type="hidden" name="codigo" value="<?php echo $persona[0]->codigo; ?>">
                         <input type="submit" class="btn btn-primary" value="Editar">
                     </div>
                 </form>
