@@ -11,7 +11,7 @@
 
     $sentencia = $bd -> query("select * from persona where codigo = $codigo");
     $persona = $sentencia->fetchAll(PDO::FETCH_OBJ);
-    print_r($persona);
+    //print_r($persona);
 ?>
 
 
