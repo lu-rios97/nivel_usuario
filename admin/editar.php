@@ -24,7 +24,7 @@
                 <div class="card-header">
                     Editar datos:
                 </div>
-                <form class="p-4" method="POST" action="editarProceso.php">
+                <form class="p-4" method="POST" action="editarproceso.php">
                     <div class="mb-3">
                         <label class="form-label">Usuario: </label>
                         <input type="text" class="form-control" name="usuario" required 
