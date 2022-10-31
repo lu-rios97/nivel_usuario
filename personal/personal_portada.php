@@ -186,9 +186,6 @@
                             Ingresar datos:
                         </div>
                         <form class="p-4" method="POST" action="registrar.php">
-<!--                         <div class="mb-3">
-                                <input type="hidden" class="form-control" name="codigo" autofocus required>
-                            </div> -->
                             <div class="mb-3">
                                 <label class="form-label">Usuario: </label>
                                 <input type="text" class="form-control" name="usuario" autofocus required>
